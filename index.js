@@ -46,8 +46,8 @@ bot.use((ctx, next) => {
 	next();
 });
 
-/** join - Принять участие в розыгрыше */
-bot.command('join', ctx => {
+/** joins - Принять участие в розыгрыше */
+bot.command('joins', ctx => {
 	return storage.addPlayer(ctx.chat.id, ctx.chat.title, ctx.from.id)
 		.then(result => {
 			let response = null;
