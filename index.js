@@ -11,7 +11,7 @@ const storage = require('./storage');
 const Status = require('./storage').Status;
 const bot = new Telegraf(process.env.BOT_TOKEN);
 
-bot.use(Session);
+
 bot.telegram.getMe().then(botInfo => bot.options.username = botInfo.username);
 
 bot.filter(({ message }) => {
