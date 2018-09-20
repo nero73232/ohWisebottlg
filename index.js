@@ -190,8 +190,8 @@ bot.command('wstats', ctx => {
 		});
 });
 
-/** wclean - удалить пользователей, которые не состоят в группе */
-bot.command('wclean', ctx => {
+/** wclear - удалить пользователей, которые не состоят в группе */
+bot.command('wclear', ctx => {
 	return ctx.getChatMember(ctx.from.id)
 		.then(chatMember => {
 			if (chatMember.status !== 'creator') {
