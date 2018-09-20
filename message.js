@@ -79,7 +79,7 @@ class Message {
 	}
 
 	didNotPlay() {
-		return 'А ты и не учавствовал';
+		return 'А ты и не участвовал';
 	}
 
 	emptyCutie() {
@@ -87,7 +87,7 @@ class Message {
 	}
 
 	startElection() {
-		return ' Начинаю алгорит выбора умника';
+		return ' Начинаю алгоритм выбора умника...';
 	}
 
 	filterBad(step) {
