@@ -76,7 +76,7 @@ class Message {
 	}
 
 	ban(username, kickerName) {
-		return `${username} теперь, конечно, не сможет стать умником. Но и ${kickerName} тоже не факт, что умный`;
+		return `${username} теперь, конечно, не сможет стать умником. Но и ${kickerName} тоже не факт, что магистратуру`;
 	}
 
 	didNotPlay() {
@@ -125,7 +125,7 @@ class Message {
 	}
 
 	emptyPlayers() {
-		return 'Слишком мало участников, не из кого выбирать';
+		return 'А никто и не присоеденился';
 	}
 }
 
