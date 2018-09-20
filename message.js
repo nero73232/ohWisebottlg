@@ -59,11 +59,11 @@ class Message {
 	}
 
 	join(username) {
-		return `@${username}, Молодец, теперь ты учавствуешь!`;
+		return `@${username}, Молодец, теперь ты участвуешь!`;
 	}
 
 	alreadyJoined() {
-		return 'Уже участвуешь';
+		return 'ага, ты уже участвуешь';
 	}
 
 	leave(username) {
