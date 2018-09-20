@@ -63,7 +63,7 @@ class Message {
 	}
 
 	alreadyJoined() {
-		return 'Уже Учавствуешь';
+		return 'Уже участвуешь';
 	}
 
 	leave(username) {
