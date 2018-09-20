@@ -46,8 +46,8 @@ bot.use((ctx, next) => {
 	next();
 });
 
-/** joins - Принять участие в розыгрыше */
-bot.command('joins', ctx => {
+/** wjoin - Принять участие в розыгрыше */
+bot.command('wjoin', ctx => {
 	return storage.addPlayer(ctx.chat.id, ctx.chat.title, ctx.from.id)
 		.then(result => {
 			let response = null;
@@ -62,8 +62,8 @@ bot.command('joins', ctx => {
 		});
 });
 
-/** leave - Выйти из розыгрыша */
-bot.command('leave', ctx => {
+/** wleave - Выйти из розыгрыша */
+bot.command('wleave', ctx => {
 	return storage.removePlayer(ctx.chat.id, ctx.from.id)
 		.then(result => {
 			let response = null;
@@ -80,8 +80,8 @@ bot.command('leave', ctx => {
 
 let kGetLock = {};
 	
-/** get - Узнать текущего лапусечку */
-bot.command('get', ctx => {
+/** wget - Узнать текущего лапусечку */
+bot.command('wget', ctx => {
 	let isNewCutie = false;
 	return storage.getCutie(ctx.chat.id, ctx.date)
 		.then(cutieId => {
@@ -161,8 +161,8 @@ bot.command('get', ctx => {
 		});
 });
 
-/** stats - Посмотреть статистику */
-bot.command('stats', ctx => {
+/** wstats - Посмотреть статистику */
+bot.command('wstats', ctx => {
 	return storage.getCutie(ctx.chat.id, ctx.date)
 		.then(cutieId => {
 			ctx.cutie = { id: cutieId };
@@ -190,8 +190,8 @@ bot.command('stats', ctx => {
 		});
 });
 
-/** clean - удалить пользователей, которые не состоят в группе */
-bot.command('clean', ctx => {
+/** wclean - удалить пользователей, которые не состоят в группе */
+bot.command('wclean', ctx => {
 	return ctx.getChatMember(ctx.from.id)
 		.then(chatMember => {
 			if (chatMember.status !== 'creator') {
