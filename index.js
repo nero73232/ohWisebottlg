@@ -194,7 +194,7 @@ bot.command('wstats', ctx => {
 bot.command('wclear', ctx => {
 	return ctx.getChatMember(ctx.from.id)
 		.then(chatMember => {
-			if (chatMember.status !== 'creator') {
+			if (chatMember.status !== 'administrator') {
 				return;
 			}
 			return clean(ctx, true);
