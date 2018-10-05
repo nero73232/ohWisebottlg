@@ -43,7 +43,7 @@ class Message {
 	}
 
 	error(code) {
-		return `Я что-то нажал, и все исчезло, пинганите @${process.env.ADMIN_USERNAME} и скажите, что ${code}`;
+		return `Я что-то нажал, и все исчезло, пинганите @murzilka17 и скажите, что он болбес`;
 	}
 
 	errorEmptyUserName() {
