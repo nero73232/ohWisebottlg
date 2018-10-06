@@ -43,7 +43,7 @@ class Message {
 	}
 
 	error(code) {
-		return `Я что-то нажал, и все исчезло, пинганите @murzilka17 и скажите, что он болбес`;
+		return `Я что-то нажал, и все исчезло, пинганите @${process.env.ADMIN_USERNAME} и скажите, что ${code}`;
 	}
 
 	errorEmptyUserName() {
@@ -75,7 +75,7 @@ class Message {
 	}
 
 	ban(username, kickerName) {
-		return `${username} теперь, конечно, не сможет стать умником. Но и ${kickerName} тоже не факт, что магистратуру`;
+		return `${username} теперь, конечно, не сможет стать умником. Но и ${kickerName} тоже не факт, что ходит в магистратуру`;
 	}
 
 	didNotPlay() {
