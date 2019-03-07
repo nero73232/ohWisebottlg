@@ -38,7 +38,7 @@ bot.use((ctx, next) => {
 });
 
 
-const kMoscowTimeOffset = 3;
+const kMoscowTimeOffset = 4;
 bot.use((ctx, next) => {
 	const d = new Date();
 	const utc = d.getTime() - (d.getTimezoneOffset() * 60000);
