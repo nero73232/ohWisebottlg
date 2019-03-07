@@ -82,7 +82,7 @@ class Message {
 	}
 
 	cutie(username) {
-		return `Умник дня *${username}*`;
+		return `Шпион дня *@${username}*`;
 	}
 
 	process() {
