@@ -6,7 +6,7 @@ class Message {
 
 	static get bad() {
 		return ['Читавших 50 оттенков серого'
-			, 'Энлайтов'
+			, 'Истинных резистов'
 			, 'Тех, кто сегодня не шпионил'
 			
 		];
@@ -65,7 +65,7 @@ class Message {
 	}
 
 	startElection() {
-		return ' Начинаю алгоритм выбора шпион...';
+		return ' Начинаю алгоритм выбора шпиона...';
 	}
 
 	filterBad(step) {
@@ -73,12 +73,12 @@ class Message {
 	}
 
 	filterGood(arr) {
-		const str = (arr && arr.length) ? arr.map(n => `@${n}`).join(', ') : 'прошедших отбор';
+		const str = (arr && arr.length) ? arr.map(n => `${n}`).join(', ') : 'прошедших отбор';
 		return `Выбираю из ${str}...`;
 	}
 
 	newCutieWithoutPing(username) {
-		return `ВОТ КТО ШПИОН -  *${username}*!`;
+		return `ВОТ КТО ШПИОН -  *@${username}*!`;
 	}
 
 	cutie(username) {
